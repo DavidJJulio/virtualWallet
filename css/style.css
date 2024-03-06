@@ -44,9 +44,11 @@ body {
     width: 1.5em;
 }
 .footer {
+    height: 60px;
     width: 100%;
     position: fixed;
     bottom: 0;
+    background: var(--color-primario);
 }
 .footer ul {
     display: flex;
