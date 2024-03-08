@@ -231,10 +231,10 @@ progress[value]::-moz-progress-bar {
 
 
 
-/* .activities__transactions {
-    background-color: red;
+.activities__transactions {
+    height: 600px;
     
-} */
+}
 .activities__transactions h3 {
     padding-top: 5px;
     /* background-color: violet; */
@@ -242,7 +242,7 @@ progress[value]::-moz-progress-bar {
     font-family: "SF-Pro-Text-Bold.otf";
 }
 .transactions__cards {
-    max-height: 160px;
+    max-height: 600px;
     overflow-y: scroll;
 }
 .transactions__cards img {
