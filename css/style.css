@@ -59,6 +59,7 @@ body {
     width: 1.5em;
 }
 .footer {
+    z-index: 11;
     height: 60px;
     width: 100%;
     position: fixed;
@@ -232,7 +233,7 @@ progress[value]::-moz-progress-bar {
 
 
 .activities__transactions {
-    height: 600px;
+    height: 550px;
     
 }
 .activities__transactions h3 {
@@ -242,7 +243,7 @@ progress[value]::-moz-progress-bar {
     font-family: "SF-Pro-Text-Bold.otf";
 }
 .transactions__cards {
-    max-height: 600px;
+    max-height: 550px;
     overflow-y: scroll;
 }
 .transactions__cards img {
