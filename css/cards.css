@@ -5,6 +5,7 @@
 }
 body {
     overflow-y: scroll;
+    width: 375px;
 }
 .banner {
     width: 100%;
@@ -101,6 +102,7 @@ body {
     font-family: "SF-Pro-Text-Bold.otf";
     grid-area: investing;
     font-size: 1.5em;
+    height: 40px;
 }
 .main__title__2 {
     grid-area: cards;
@@ -109,6 +111,51 @@ body {
     background-color: green;
     grid-area: collection;
 }
+.mastercard {
+    background-image: url(../storage/img/Frame\ 16.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: auto;
+    margin-top: 20px;
+    height: 390px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main__banner {
     overflow: hidden;
     margin: 10px;
@@ -171,11 +218,11 @@ body {
 }
 .popinfo div {
     position: absolute;
-    margin-bottom: 120px;
-    padding: 35px;
+    margin-bottom: 130px;
+    padding-left: 35px;
     display: flex;
     justify-content: flex-end;
-    width: 209px;
+    width: 125px;
 }
 .salir {
     font-size: 1em;
