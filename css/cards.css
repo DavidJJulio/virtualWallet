@@ -1,0 +1,193 @@
+@import url(variables.css);
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-y: scroll;
+}
+.banner {
+    width: 100%;
+    height: 102vh;
+    z-index: -10;
+    position: absolute;
+    background-color: var(--color-primario);
+}
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    margin-bottom: 20px;
+    background-color: var(--color-ternario);
+    top: 0;
+    width: 100%;
+    position:sticky;
+    z-index: 1;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.header__logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.logo__icono img {
+    width: 1.5em;
+    
+}
+.logo__titulo {
+    font-family: "SF-Pro-Text-Bold.otf";
+    text-transform: uppercase;
+    color: var(--color-primario);
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+.header__menu {
+    width: auto;
+    height: auto;
+}
+.header__menu img{
+    width: 1.5em;
+}
+.footer {
+    z-index: 11;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: var(--color-primario);
+}
+.footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+.footer ul li {
+    list-style: none;
+    margin: .5em 0;
+}
+.footer ul li a img {
+    width: 2em;
+}
+.main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    padding: 0 .5em;
+    grid-template-areas: 
+    "investing"
+    "banner"
+    "banner"
+    "cards"
+    "collection"
+    "collection"
+    "collection"
+    "collection"
+    "collection"
+    ;
+    grid-gap: 10px;
+}
+.main__title__1,
+.main__title__2 {
+    text-transform: capitalize;
+    font-family: "SF-Pro-Text-Bold.otf";
+    grid-area: investing;
+    font-size: 1.5em;
+}
+.main__title__2 {
+    grid-area: cards;
+}
+.main__cards {
+    background-color: green;
+    grid-area: collection;
+}
+.main__banner {
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.150);
+    border-radius: 20px;
+    grid-area: banner;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "chanchodiv popinfo popinfo"
+    "chanchodiv popinfo popinfo"
+    "chanchodiv popinfo popinfo"
+    ;
+}
+.chancho div img{
+    height: auto;
+    width: 130px;
+    margin-top: 25px;
+}
+.chancho {
+    overflow: hidden;
+    width: 150px;
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 45%;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    grid-area: chanchodiv;
+}
+.chancho div {
+    background-color: rgba(0, 255, 200, 0.295);
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    width: 300px;
+    height: 100%;
+}
+.popinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    grid-area: popinfo;
+    gap: 10px;
+    margin-right: 10px;
+}
+.popinfo h4{
+    font-size: 1em;
+    color: var(--color-primario);
+}
+.popinfo small {
+    text-transform: capitalize;
+    color: var(--color-cuarto);
+}
+.popinfo button {
+    font-family: "SF-Pro-Text-Bold.otf";
+    color: var(--color-ternario);
+    border: none;
+    background-color: var(--color-secundario);
+}
+.popinfo div {
+    position: absolute;
+    margin-bottom: 120px;
+    padding: 35px;
+    display: flex;
+    justify-content: flex-end;
+    width: 209px;
+}
+.salir {
+    font-size: 1em;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+}
+.learn {
+    font-family: "SF-Pro-Text-Heavy.otf";
+    font-size: .7em;
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+}
