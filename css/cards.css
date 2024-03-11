@@ -106,20 +106,38 @@ body {
 }
 .main__title__2 {
     grid-area: cards;
+    margin-top: 50px;
 }
 .main__cards {
-    background-color: green;
+    margin-bottom: 60px;
+    width: auto;
     grid-area: collection;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 10px;
 }
 .mastercard {
     background-image: url(../storage/img/Frame\ 16.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: auto;
     margin-top: 20px;
-    height: 390px;
+    min-width: 250px;
+    min-height: 388px;
+    margin-right: 20px;
 }
-
+.visa {
+    min-width: 250px;
+    max-height: 388px;
+    min-height: 388px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../storage/img/Frame\ 17.svg);
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
 
 
 
