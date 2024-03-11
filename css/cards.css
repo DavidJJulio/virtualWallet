@@ -5,7 +5,7 @@
 }
 body {
     overflow-y: scroll;
-    width: 375px;
+    width: auto;
 }
 .banner {
     width: 100%;
@@ -78,8 +78,10 @@ body {
     width: 2em;
 }
 .main {
-    height: 100vh;
+    height: auto;
     display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr);
     padding: 0 .5em;
@@ -106,9 +108,10 @@ body {
 }
 .main__title__2 {
     grid-area: cards;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .main__cards {
+    min-height: 400px;
     margin-bottom: 60px;
     width: auto;
     grid-area: collection;
@@ -175,6 +178,8 @@ body {
 
 
 .main__banner {
+    height: auto;
+    min-height: 172px;
     overflow: hidden;
     margin: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.150);
@@ -195,7 +200,6 @@ body {
     margin-top: 25px;
 }
 .chancho {
-    overflow: hidden;
     width: 150px;
     border-top-right-radius: 35%;
     border-bottom-right-radius: 45%;
@@ -214,39 +218,43 @@ body {
 .popinfo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
     grid-area: popinfo;
-    gap: 10px;
     margin-right: 10px;
 }
-.popinfo h4{
+.popdiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.popinfo .popdiv h4{
     font-size: 1em;
     color: var(--color-primario);
 }
-.popinfo small {
+.popinfo .popdiv small {
     text-transform: capitalize;
     color: var(--color-cuarto);
 }
-.popinfo button {
+.popinfo .popdiv button {
     font-family: "SF-Pro-Text-Bold.otf";
     color: var(--color-ternario);
     border: none;
     background-color: var(--color-secundario);
 }
-.popinfo div {
-    position: absolute;
-    margin-bottom: 130px;
-    padding-left: 35px;
+.salirdiv {
     display: flex;
     justify-content: flex-end;
-    width: 125px;
+    width: 100%;
 }
 .salir {
     font-size: 1em;
     border-radius: 100%;
     width: 25px;
     height: 25px;
+    border: none;
+    background-color: var(--color-secundario);
 }
 .learn {
     font-family: "SF-Pro-Text-Heavy.otf";
