@@ -174,8 +174,55 @@ section {
     max-height: 100%;
 }
 .main__popimg {
-    width: 100%;
-    background-color: rebeccapurple;
-    height: 200px;
-}
 
+    width: 100%;
+    background-color: #00dda23b;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.salir {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.salir button {
+    border: none;
+    margin-right: 25px;
+    background-color: #00DDA3;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    color: var(--color-ternario);
+    font-size: 1.5em;
+
+}
+.container {
+    width: 100%;
+    height: 175px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container div {
+    width: 180px;
+    height: 100px;
+    background-image: url(../storage/img/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.container article {
+    width: 180px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.container article h3 {
+    font-size: 1.3em;
+}
+.container article p {
+    font-size: .8em;
+}
