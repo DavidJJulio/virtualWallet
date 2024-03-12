@@ -226,3 +226,12 @@ section {
 .container article p {
     font-size: .8em;
 }
+
+@media (width > 700px) {
+    .grn-crcl {
+        bottom: -70px;
+    }
+    .buttons {
+        margin-top: 100px;
+    }
+}
